@@ -1,0 +1,18 @@
+
+.card {
+    width: 300px;
+}
+
+#button-input-div {
+    width: 150px;
+}
+
+#button-input-div button {
+    width: 50px;
+    font-size: 15px;
+}
+
+#button-input-div input {
+    background-color: white;
+    font-size: 15px;
+}

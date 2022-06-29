@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Waje Smart Assessment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container mt-5" id="app">
+        <div class="my-4">
+            <h3>Question 1</h3>
+            <p> A Q() object represents an SQL condition that can be used in database-related operations.</p>
+        </div>
+        <div class="my-4">
+            <h3 class="mb-3">Questions 2 & 3</h3>
+            <p>A directive is a special syntax in Vue JS that tells the library to manipulate a DOM element in a certain way.</p>
+            <p>For example, the counter below uses the "@click" directive to increment/decrement the number in the disabled input.</p>
+            <p>Also with each number increment, a "v-for" directive is used to create multiple cards.</p>
+            <div class="mt-5">
+                <h5>Maximum Amount: $ {{ find_max_sum() }}</h5>
+                <div class="input-group my-2" id="button-input-div">
+                    <button @click="decrease" class="btn btn-primary btn-sm" type="button">-</button>
+                    <input type="text" class="form-control text-center" disabled placeholder="0" v-model="count">
+                    <button @click="increase" class="btn btn-primary btn-sm" type="button">+</button>
+                </div>
+            </div>
+            <div class="row gx-2">
+                <div v-for="(amount, index) in wealth" class="card m-2">
+                    <div class="card-body">
+                        <h5 class="card-title">House {{ index+1 }}</h5>
+                        <p class="card-text fs-4">$ {{ amount }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
