@@ -14,7 +14,17 @@
     <div class="container mt-5" id="app">
         <div class="my-4">
             <h3>Question 1</h3>
-            <p> A Q() object represents an SQL condition that can be used in database-related operations.</p>
+            <p>A Q() object represents an SQL condition that can be used in database-related operations.</p>
+            <p></p>
+            <p>For example, consider the model below</p> 
+            <p>from django.db import models</p>
+            <p>class Person(models.Model):
+            <br>&emsp;first_name = models.CharField(max_length=30)
+            <br>&emsp;last_name = models.CharField(max_length=30)
+            <br>&emsp;age = models.IntegerField()
+            </p>
+            <p>To filter records with first name of "John" OR an age > 18, the corresponding query would be: </p>
+            <p><b>query = Person.objects.filter(Q(first_name='John') | Q(age__gt=18))</b></p>
         </div>
         <div class="my-4">
             <h3 class="mb-3">Questions 2 & 3</h3>
